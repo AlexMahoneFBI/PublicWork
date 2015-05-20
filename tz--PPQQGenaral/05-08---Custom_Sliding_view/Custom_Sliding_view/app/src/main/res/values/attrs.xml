@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MySlidingView">
+        <attr name="price_top" format="integer"></attr>
+        <attr name="price_bottom" format="integer"></attr>
+        <attr name="author" format="string"></attr>
+        <attr name="date" format="string"></attr>
+    </declare-styleable>
+</resources>

@@ -114,6 +114,9 @@ public class MySlidingCoustomView extends View{
     private static final int FOURTH_STATE = 1000;
     private static final int FIFTH_STATE = 10000;
 
+    private String author;
+    private String createdDate;
+
     public MySlidingCoustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
         axis_bg = BitmapFactory.decodeResource(getResources(), R.drawable.axis_before);
@@ -128,6 +131,8 @@ public class MySlidingCoustomView extends View{
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.MySlidingView);
         price_t = typedArray.getInt(R.styleable.MySlidingView_price_top,500);
         price_b = typedArray.getInt(R.styleable.MySlidingView_price_bottom,200);
+        author = typedArray.getString(R.styleable.MySlidingView_author);
+        createdDate = typedArray.getString(R.styleable.MySlidingView_date);
 
 //        price_t = 500;
 //        price_b = 200;
@@ -194,7 +199,8 @@ public class MySlidingCoustomView extends View{
         MyLog.i("INFO", "(float)(19/20)--" + (float) (19 / 20) + "+++(float)(1-1/20)--" + (float) (1 - 1 / 20));
 
         paint.setTextSize(20 / scale_h);
-        canvas.drawText("Author:Alex", 0, axis_bg.getHeight()+paint.ascent(),paint);
+        canvas.drawText("Author:" + author, 0, axis_bg.getHeight() + 3*paint.ascent(), paint);
+        canvas.drawText("Date:" + createdDate, 0, axis_bg.getHeight()+paint.ascent(),paint);
 
         sliding_btn_x = (this.getWidth()/scale_h - sliding_btn.getWidth())/2;
 

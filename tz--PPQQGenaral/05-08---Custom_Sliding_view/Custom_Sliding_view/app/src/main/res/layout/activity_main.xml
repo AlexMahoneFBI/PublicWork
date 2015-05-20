@@ -10,6 +10,8 @@
         android:layout_height="700px"
         android:background="#0000ff"
         myandroid:price_top="2000"
-        myandroid:price_bottom="400"/>
+        myandroid:price_bottom="400"
+        myandroid:author="Alex"
+        myandroid:date="2015-05-17"/>
 
 </LinearLayout>
