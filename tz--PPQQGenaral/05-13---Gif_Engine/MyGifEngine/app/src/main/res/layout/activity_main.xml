@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myandroid="http://schemas.android.com/apk/res/com.example.buaa.mygifengine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framelayout"
+    android:background="#383838">
+<!--<com.example.buaa.mygifengine.view.MyGifSurfaceView
+    android:layout_width="400px"
+    android:layout_height="600px"
+    myandroid:gif_id="@drawable/gun"
+    />-->
+<com.example.buaa.mygifengine.view.MyGifImageView
+    android:layout_width="400px"
+    android:layout_height="600px"
+    android:src="@drawable/gun"
+    />
+
+</FrameLayout>
