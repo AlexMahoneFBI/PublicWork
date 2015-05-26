@@ -36,6 +36,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Surf
      */
     private void initMeunView() {
         setContentView(R.layout.activity_main);
+//        setContentView(R.layout.custom_view);
 
         normal = (ImageView) findViewById(R.id.normal);
         nightmare = (ImageView) findViewById(R.id.nightmare);

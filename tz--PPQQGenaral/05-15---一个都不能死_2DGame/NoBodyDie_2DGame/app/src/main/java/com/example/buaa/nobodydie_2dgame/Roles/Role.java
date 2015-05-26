@@ -16,7 +16,7 @@ public class Role {
     //Coordinate
     private long x, y;
     //Speed
-    private long speedX, speedY;
+    private long speedY;
     //Width and Height
     private int width, height;
 
@@ -40,36 +40,8 @@ public class Role {
         this.height = bitMap.getHeight();
     }
 
-    public Bitmap getBitMap() {
-        return bitMap;
-    }
-
-    public void setBitMap(Bitmap bitMap) {
-        this.bitMap = bitMap;
-    }
-
-    public Bitmap[] getBitmaps() {
-        return bitmaps;
-    }
-
-    public void setBitmaps(Bitmap[] bitmaps) {
-        this.bitmaps = bitmaps;
-    }
-
     public int getHeight() {
         return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public long getSpeedX() {
-        return speedX;
-    }
-
-    public void setSpeedX(long speedX) {
-        this.speedX = speedX;
     }
 
     public long getSpeedY() {
@@ -82,10 +54,6 @@ public class Role {
 
     public int getWidth() {
         return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
     }
 
     public long getX() {

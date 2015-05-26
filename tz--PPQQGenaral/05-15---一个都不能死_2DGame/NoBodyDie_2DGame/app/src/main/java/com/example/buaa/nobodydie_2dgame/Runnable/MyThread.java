@@ -46,7 +46,6 @@ public class MyThread extends Thread {
         this.isStart = isStart;
     }
 
-    private Role role;
     public Role[] roles;
     private Rect[] rects;
 
@@ -61,7 +60,6 @@ public class MyThread extends Thread {
     public int getGameStatus() {
         return gameStatus;
     }
-
     public void setGameStatus(int gameStatus) {
         this.gameStatus = gameStatus;
     }
@@ -99,7 +97,6 @@ public class MyThread extends Thread {
         rects = new Rect[gameType];
 
         initSprite();
-
     }
 
     /**
